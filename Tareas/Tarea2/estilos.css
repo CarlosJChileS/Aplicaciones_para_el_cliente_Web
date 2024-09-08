@@ -1,16 +1,107 @@
+
+/* Establece la tipografía general */
 body {
-    color: rgb(0, 0, 0); background-color: rgba(0, 0, 0, 0.126); font-family: 'Times New Roman', Times, serif; font-size: 20px;
-    }
-    
-img {
-    display: block;
-    margin:  20px auto;
-    max-width: 20%;
-    height: auto;
-    border-radius: 0px;
-    border: 2px solid #00000080;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
+
+/* Centrar el contenido principal */
+CENTER {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo para el encabezado principal (nombre) */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #241212;
+}
+
+/* Estilo para el subtítulo (descripción) */
+h5 {
+    font-size: 18px;
+    margin-top: -10px;
+    color: #777;
+}
+
+/* Estilos para las secciones */
+h2 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: #555b63ae;
+    border-bottom: 2px solid #555b63ae;
+    padding-bottom: 5px;
+    text-align: left;
+}
+
+/* Estilo para los divs alineados a la izquierda */
+DIV[ALIGN="LEFT"] {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+}
+
+/* Estilos para las listas */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Estilo para el texto en negrita */
+strong {
+    color: #555b63ae;
+    font-size: 18px;
+}
+
+/* Imagen del perfil */
+img {
+    border-radius: 10%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border: 2px solid #555b63ae;
+}
+
+/* Tabla de referencias */
 table {
-    width: 100%;
+    width: 60%;
+    margin: 20px auto;
     border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555b63ae;
+    color: white;
+}
+
+/* Añade un poco de espacio en los párrafos */
+p {
+    line-height: 1.6;
+}
+
+/* Links de correo electrónicos */
+a {
+    color: #555b63ae;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

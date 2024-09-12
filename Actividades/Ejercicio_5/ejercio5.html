@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+</head>
+<body>
+    <div>
+        <p>hola</p>
+        <script type="text/javascript">
+        var primer_saludo = "hola";
+        var segundo_saludo = primer_saludo;
+        primer_saludo = "hello";
+        alert(segundo_saludo);  <!-- Corregido segundo por segundo_saludo -->
+        </script>
+    </div>
+
+    <script type="text/javascript">
+        var dividendo = prompt("Introduce el dividendo:");
+        var divisor = prompt("Introduce el divisor:");
+        var resultado;
+        if (divisor != 0) {
+            resultado = dividendo / divisor;
+            alert("El resultado es: " + resultado);
+        } else {
+            alert("No es posible la división por cero");
+        }
+    </script>
+</body>
+</html>

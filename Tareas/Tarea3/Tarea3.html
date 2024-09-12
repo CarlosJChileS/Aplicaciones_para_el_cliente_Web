@@ -6,7 +6,7 @@
 <link href="estilos.css" rel="stylesheet" />
 </head>
 <body>
-
+<DIV ALIGN=LEFT>
     <form action="" method="get">  <!-- formato -->
     <p>
         Cedula: <input type="number" name="cedula_control" autofocus required />
@@ -25,12 +25,22 @@
         Telefono: <input type="number" name="telefono_control" autofocus required />
     </p>
     <p>
-        Correo electrónico: <input type="email" name="email_control" required />
+        E-mail: <input type="email" name="email_control" required />
     </p>
-    <p>
-        Ciudad: <input type="text" name="ciudad_control" required />
-    </p>
+
 <p>
+</DIV>
+
+<div class="dropdown">
+    <label for="lang">Ciudad</label>
+    <select name="ciudades" id="lang">
+        <option value="Manta">Manta</option>
+        <option value="Portoviejo">Portoviejo</option>
+        <option value="Calceta">Calceta</option>
+        <option value="Chone">Chone</option>
+        <option value="Quito">Quito</option>
+    </select>
+</div>
 <input type="submit" value="Enviar" /> <!--tipo submit se convierte en boton-->
 </p>
 </form>

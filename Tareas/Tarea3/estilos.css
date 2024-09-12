@@ -1,0 +1,27 @@
+body {
+    font-family: 'Times new roman' Arial, sans-serif;
+    line-height: 4;
+    color: #333;
+    background-color: #ffffffd4;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    color: #000000;
+    line-height:3;
+
+    border-bottom: #ff0000;
+    background-color: aqua;
+    
+}
+input{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+label {
+    margin:  auto;
+    color: aqua;
+    background-color: #6a6a6a;
+  }

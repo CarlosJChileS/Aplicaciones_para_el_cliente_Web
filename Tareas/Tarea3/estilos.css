@@ -24,4 +24,10 @@ label {
     margin:  auto;
     color: aqua;
     background-color: #6a6a6a;
+    
+  }
+  select {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #000000;
   }

@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />
-<title>Tarea3</title> <!-- titulo-->
-<link href="estilos.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>Tarea3</title>
+    <link href="estilos.css" rel="stylesheet" />
 </head>
 <body>
-<DIV ALIGN=LEFT>
-    <form action="" method="get">  <!-- formato -->
-    <p>
-        Cedula: <input type="number" name="cedula_control" autofocus required />
-    </p>
-    <p>
-        Apellido: <input type="text" name="apelido_control" required />
-    </p>
-    <p>
-    <p>
-        Nombre: <input type="text" name="nombre_control" required />
-    </p>
-    <p>
-        Direcion: <input type="text" name="direccion_control" required />
-    </p>
-    <p>
-        Telefono: <input type="number" name="telefono_control" autofocus required />
-    </p>
-    <p>
-        E-mail: <input type="email" name="email_control" required />
-    </p>
-
-<p>
-</DIV>
-
-<div class="dropdown">
-    <label for="lang">Ciudad</label>
-    <select name="ciudades" id="lang">
-        <option value="Manta">Manta</option>
-        <option value="Portoviejo">Portoviejo</option>
-        <option value="Calceta">Calceta</option>
-        <option value="Chone">Chone</option>
-        <option value="Quito">Quito</option>
-    </select>
-</div>
-<input type="submit" value="Enviar" /> <!--tipo submit se convierte en boton-->
-</p>
-</form>
+    <div align="left">
+        <form action="" method="get">  <!-- formulario -->
+            <p>
+                Cedula: <input type="number" name="cedula_control" autofocus required />
+            </p>
+            <p>
+                Apellido: <input type="text" name="apellido_control" required />
+            </p>
+            <p>
+                Nombre: <input type="text" name="nombre_control" required />
+            </p>
+            <p>
+                Direccion: <input type="text" name="direccion_control" required />
+            </p>
+            <p>
+                Telefono: <input type="number" name="telefono_control" required />
+            </p>
+            <p>
+                E-mail: <input type="email" name="email_control" required />
+            </p>
+            <!-- ciudad, label para desplegable -->
+            <p>
+                <label for="lang">Ciudad</label>
+                <select name="ciudades" id="lang">
+                    <option value="Manta">Manta</option>
+                    <option value="Portoviejo">Portoviejo</option>
+                    <option value="Calceta">Calceta</option>
+                    <option value="Chone">Chone</option>
+                    <option value="Quito">Quito</option>
+                </select>
+            </p>
+            <!-- Botón de enviar -->
+            <p>
+                <input type="submit" value="Enviar" />
+            </p>
+        </form>
+    </div>
 </body>
 </html>
-

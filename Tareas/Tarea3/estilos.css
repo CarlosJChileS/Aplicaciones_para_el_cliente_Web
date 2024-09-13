@@ -1,34 +1,37 @@
 body {
-    font-family: 'Times new roman' Arial, sans-serif;
-    line-height: 4;
-    color: #333;
-    background-color: #ffffffd4;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
-p{
-    color: #000000;
-    line-height:3;
-
-    border-bottom: #ff0000;
-    background-color: aqua;
-    
-}
-input{
-    color: #000000;
-    background-color: #ffffff;
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    margin:  auto;
-    color: aqua;
-    background-color: #6a6a6a;
-    
-  }
-  select {
-    margin-bottom: 20px;
+input, select {
+    width: 100%;
+    padding: 10px;
     margin-top: 10px;
-    color: #000000;
-    background-color: #cac7c7;
-  }
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}

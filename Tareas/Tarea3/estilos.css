@@ -1,3 +1,4 @@
+/* Establece la fuente predeterminada como Arial y define un color de fondo para la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -7,14 +8,14 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+/* Aplica estilos al formulario */
 form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
+/* Estilos aplicados tanto a los campos de entrada como al menú desplegable */
 input, select {
     width: 100%;
     padding: 10px;

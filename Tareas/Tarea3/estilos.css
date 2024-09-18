@@ -6,16 +6,33 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    
+    margin: 10;
+    flex-direction: column; /* Alinea en columna título y formulario */
+    text-align: center;
 }
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 400px; /* Limita el ancho máximo del formulario */
+}
+
+/* Estilo para el título */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
 /* Aplica estilos al formulario */
 form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ancho completo dentro del contenedor */
 }
+
 /* Estilos aplicados tanto a los campos de entrada como al menú desplegable */
 input, select {
     width: 100%;
@@ -26,6 +43,7 @@ input, select {
     border: 1px solid #ccc;
 }
 
+/* Estilo para el botón */
 input[type="submit"] {
     background-color: green;
     color: white;

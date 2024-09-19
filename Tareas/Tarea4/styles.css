@@ -1,15 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0cece;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina el margen para un centrado perfecto */
+    flex-direction: column; /* Alinea en columna título y formulario */
+    text-align: center;
+}
+
 /* Estilos para el área de resultados */
 #resultados {
-    border: 10px solid #5f5a5abe;
+    border: 1px solid #000000;
     padding: 20px;
     width: 900px;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    font-family: Arial, sans-serif;
+    background-color: #d0cbcbe0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Estilo del título */
-h3 {
-    font-family: Arial, sans-serif;
-    color: #000000;
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }

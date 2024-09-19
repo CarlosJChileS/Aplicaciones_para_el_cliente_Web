@@ -1,0 +1,15 @@
+/* Estilos para el área de resultados */
+#resultados {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del título */
+h3 {
+    font-family: Arial, sans-serif;
+    color: #333;
+}

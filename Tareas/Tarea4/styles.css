@@ -2,10 +2,10 @@ body {
     font-family: Arial, sans-serif;
     background-color: #d0cece;
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana */
-    margin: 0; /* Elimina el margen para un centrado perfecto */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
     flex-direction: column; /* Alinea en columna título y formulario */
     text-align: center;
 }

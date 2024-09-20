@@ -2,7 +2,7 @@
 var operando_1 = parseFloat(prompt("Introduce el primer valor numérico:"));
 var operando_2 = parseFloat(prompt("Introduce el segundo valor numérico:"));
 
-// Obtener el elemento div donde se mostrarán los resultados
+
 var resultadoDiv = document.getElementById('resultados');
 
 // Bucle de 5 iteraciones

@@ -1,0 +1,371 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* FullCalendar Styles */
+.calendario-container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 600px;
+    text-align: center;
+}
+
+#calendar {
+    width: 100%;
+    min-height: 600px;
+    background-color: transparent;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* FullCalendar Buttons */
+.fc-button {
+    background-color: #97d700;
+    border: none;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.fc-button:hover {
+    background-color: #7fbf00;
+}
+
+.fc-toolbar {
+    margin-bottom: 20px;
+    border: none;
+}
+
+.fc-event {
+    background-color: #97d700;
+    border: none;
+    color: #FFF;
+}
+
+.fc-daygrid-day-number {
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    background-color: #97d700;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #7fbf00;
+}
+
+button.delete {
+    background-color: #e30613;
+}
+
+button.delete:hover {
+    background-color: #c00511;
+}
+
+/* General Input and Select Styling */
+input, select, textarea {
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #97d700;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+    font-size: 18px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #e30613;
+}
+
+select:hover {
+    background-color: #f1f1f1;
+}
+
+/* Detalles Historia Styling */
+.detalles-historia {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px; /* Aumentar el padding */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 90%;
+    max-width: 1000px; /* Aumentar el max-width */
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.detalles-historia h3 {
+    color: #4CAF50;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.detalles-historia p {
+    margin-bottom: 15px;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.detalles-historia p strong {
+    color: #4CAF50;
+}
+
+/* Estilo del botón de cerrar */
+.detalles-historia button {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detalles-historia button:hover {
+    background-color: #d32f2f;
+}
+
+/* Lista de Pacientes/Historias */
+.cuadro-limite {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+#listaPacientes, #listaHistorias {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#listaPacientes li, #listaHistorias li {
+    margin-bottom: 10px;
+}
+
+/* Formulario oculto */
+.form-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea, form select {
+    width: 90%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #A4C639;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    font-size: 18px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form button {
+    width: 50%;
+    padding: 15px;
+    margin: 15px;
+    background-color: #A4C639;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form button:hover {
+    background-color: #E30613;
+}
+
+/* Aligning input and buttons in one line */
+.input-button-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-button-container input {
+    width: 30%;
+    margin-right: 10px;
+}
+
+.input-button-container button {
+    width: 20%;
+    margin-right: 10px;
+}
+
+.input-button-container button:last-child {
+    margin-right: 0;
+}
+
+/* Button Container for Create and Back */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    width: 30%;
+    padding: 15px;
+    margin: 15px;
+    background-color: #97d700;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.button-container button:hover {
+    background-color: #7fbf00;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+    .input-button-container input {
+        width: 60%;
+    }
+
+    .input-button-container button {
+        width: 30%;
+    }
+
+    .button-container button {
+        width: 40%;
+    }
+
+    form input, form textarea, form select {
+        width: 100%;
+    }
+
+    .detalles-historia {
+        max-width: 100%;
+        min-width: 300px; /* Mínimo ancho para pantallas pequeñas */
+    }
+}
+/* Estilo para el contenedor de detalles de historia clínica */
+#detallesHistoria {
+    background-color: white; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    margin: 20px auto; /* Centramos el cuadro */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra */
+    max-width: 90%; /* Ocupa el 90% del ancho de la pantalla */
+    min-width: 800px; /* Mínimo ancho de 800px */
+    max-height: 90vh; /* Ocupa un máximo del 90% de la altura de la pantalla */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es muy grande */
+    text-align: left; /* Alineación del texto a la izquierda */
+    color: #333; /* Color del texto */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; /* Espaciado entre líneas */
+}
+
+/* Estilo para los títulos dentro del cuadro */
+#detallesHistoria h3 {
+    color: #4CAF50; /* Color verde para el título */
+    font-size: 24px; /* Tamaño de letra grande */
+    text-align: center; /* Alineación centrada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilo para los párrafos dentro del cuadro */
+#detallesHistoria p {
+    margin-bottom: 15px; /* Espaciado inferior en párrafos */
+    font-size: 18px; /* Tamaño de letra mediano */
+    word-wrap: break-word; /* Permitir que las palabras largas se dividan */
+}
+
+/* Estilo para las etiquetas de los campos */
+#detallesHistoria p strong {
+    color: #4CAF50; /* Color verde para las etiquetas */
+}
+
+/* Estilo del botón de cerrar */
+#detallesHistoria button {
+    background-color: #f44336; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    padding: 15px 30px; /* Tamaño del botón */
+    border: none; /* Sin borde */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de texto */
+    cursor: pointer; /* Manito al pasar el cursor */
+    margin-top: 20px; /* Espacio superior */
+    display: block; /* Mostrar como bloque */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 200px; /* Máximo ancho del botón */
+    margin-left: auto; /* Centramos el botón */
+    margin-right: auto;
+}
+
+#detallesHistoria button:hover {
+    background-color: #d32f2f; /* Color rojo más oscuro al pasar el cursor */
+}

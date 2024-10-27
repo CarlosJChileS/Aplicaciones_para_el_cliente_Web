@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Validaciones con Expresiones Regulares</title>
+</head>
+<body>
+    <h2>Ejemplos de Validaciones con Expresiones Regulares en JavaScript</h2>
+    
+    <script>
+        // 1. Validar un correo electrónico
+        function validarEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+        console.log("Validación de correo electrónico:");
+        console.log(validarEmail("ejemplo@dominio.com")); // true
+        console.log(validarEmail("noesunemail")); // false
+
+        // 2. Validar un número de teléfono (10 dígitos)
+        function validarTelefono(telefono) {
+            const regex = /^\d{10}$/; // Solo 10 dígitos
+            return regex.test(telefono);
+        }
+        console.log("\nValidación de número de teléfono:");
+        console.log(validarTelefono("1234567890")); // true
+        console.log(validarTelefono("123-456-7890")); // false
+
+        // 3. Validar una contraseña (mínimo 8 caracteres, al menos una letra y un número)
+        function validarContrasena(contrasena) {
+            const regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+            return regex.test(contrasena);
+        }
+        console.log("\nValidación de contraseña:");
+        console.log(validarContrasena("Pass1234")); // true
+        console.log(validarContrasena("12345678")); // false
+
+        // 4. Validar una fecha en formato DD/MM/AAAA
+        function validarFecha(fecha) {
+            const regex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/;
+            return regex.test(fecha);
+        }
+        console.log("\nValidación de fecha:");
+        console.log(validarFecha("31/12/2023")); // true
+        console.log(validarFecha("31-12-2023")); // false
+
+        // 5. Validar un código postal (5 dígitos)
+        function validarCodigoPostal(codigo) {
+            const regex = /^\d{5}$/;
+            return regex.test(codigo);
+        }
+        console.log("\nValidación de código postal:");
+        console.log(validarCodigoPostal("12345")); // true
+        console.log(validarCodigoPostal("1234a")); // false
+
+        // 6. Validar un nombre (solo letras y espacios)
+        function validarNombre(nombre) {
+            const regex = /^[A-Za-z\s]+$/;
+            return regex.test(nombre);
+        }
+        console.log("\nValidación de nombre:");
+        console.log(validarNombre("Juan Pérez")); // true
+        console.log(validarNombre("Juan123")); // false
+    </script>
+</body>
+</html>

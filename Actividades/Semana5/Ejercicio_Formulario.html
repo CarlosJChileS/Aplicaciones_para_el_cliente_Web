@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h2>Formulario de Registro</h2>
+    <form action="pagina.php" method="post" enctype="multipart/form-data">
+        <!-- Campo Nombre -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" value="" size="42" maxlength="30" /> <br/>
+
+        <!-- Campo Apellidos -->
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" value="" size="40" maxlength="80" /> <br/>
+
+        <!-- Campo DNI -->
+        <label for="dni">DNI:</label>
+        <input type="text" name="dni" id="dni" value="" size="10" maxlength="9" /> <br/>
+
+        <!-- Campo Sexo -->
+        <p>Sexo:</p>
+        <input type="radio" name="sexo" id="hombre" value="hombre" checked="checked" />
+        <label for="hombre">Hombre</label> <br/>
+        <input type="radio" name="sexo" id="mujer" value="mujer" />
+        <label for="mujer">Mujer</label> <br/>
+
+        <!-- Campo Incluir Foto -->
+        <label for="foto">Incluir mi foto:</label>
+        <input type="file" name="foto" id="foto" /> <br/>
+
+        <!-- Checkbox para recibir publicidad -->
+        <input type="checkbox" name="publicidad" id="publicidad" value="publicidad" checked="checked" />
+        <label for="publicidad">Enviar publicidad</label> <br/>
+
+        <!-- Botones de acción -->
+        <input type="submit" name="enviar" value="Guardar cambios" />
+        <input type="reset" name="limpiar" value="Borrar los datos introducidos" />
+    </form>
+</body>
+</html>
